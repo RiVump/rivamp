@@ -1,6 +1,6 @@
 {
 	"name": "rivump/rivump",
-	"description": "Composer for iLab",
+	"description": "Composer Library",
 	"type": "project",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
