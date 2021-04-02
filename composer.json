@@ -15,8 +15,7 @@
 		}
 	],
 	"require-dev": {
-		"symfony/var-dumper": "4.4",
-		"maximebf/debugbar": "^1.16"
+		"symfony/var-dumper": "4.4"
 	},
 	"autoload": {
 		"psr-4": {
@@ -35,7 +34,10 @@
 		"illuminate/collections": "^8.34",
 		"league/flysystem": "^2.0",
 		"symfony/cache": "^5.2",
-		"monolog/monolog": "^2.2"
+		"monolog/monolog": "^2.2",
+		"rivump/rest": "^1.0",
+		"rivump/config": "^1.0",
+		"rivump/debugbar": "^1.0"
 	},
 	"license": "MIT",
 	"scripts": {

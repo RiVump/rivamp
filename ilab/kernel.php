@@ -1,7 +1,7 @@
 <?php
 
-use Ilab\Util\Config;
-use Ilab\Facade\Debugbar;
+use RiVump\Util\Config;
+use RiVump\Facade\Debugbar;
 
 /**
  * Composer & Classes autoload
