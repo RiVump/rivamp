@@ -17,5 +17,5 @@ Config::load(glob(__DIR__ . '/config/*.php'));
  * Bitrix init Debugbar
  */
 if (Config::get('main.bitrix')) {
-    Debugbar::getInstance('debugbar');
+    Debugbar::start('debugbar');
 }
