@@ -1,14 +1,24 @@
 <?php
 
 use Ilab\Util\Config;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Local\LocalFilesystemAdapter;
 
-function fileSystem($type = LOCK_EX, $path = './') {
-  $adapter = new League\Flysystem\Local\LocalFilesystemAdapter($path, null, $type);
-  $filesystem = new League\Flysystem\Filesystem($adapter);
-
-  return $filesystem;
+/**
+ * @param int $type
+ * @param string $path
+ * @return Filesystem
+ */
+function fileSystem($type = LOCK_EX, $path = './'): Filesystem
+{
+    $adapter = new LocalFilesystemAdapter($path, null, $type);
+    return new Filesystem($adapter);
 }
 
-function checkProd() {
-	return (Config::get('main.mode') == 'prod') ? true : false;
+/**
+ * @return bool
+ */
+function checkProd(): bool
+{
+    return Config::get('main.mode') == 'prod';
 }

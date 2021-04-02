@@ -2,6 +2,6 @@
 
 return [
     'mode' => 'dev', // prod || dev
-		'bitrix' => defined('SITE_ID'),
-		'bitrix_users' => []
+    'bitrix' => defined('SITE_ID'),
+    'bitrix_users' => []
 ];

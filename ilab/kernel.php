@@ -1,16 +1,21 @@
 <?php
+
+use Ilab\Util\Config;
+use Ilab\Facade\Debugbar;
+
 /**
  * Composer & Classes autoload
  */
-require dirname(__FILE__, 2).'/vendor/autoload.php';
+require dirname(__FILE__, 2) . '/vendor/autoload.php';
 
 /**
  * Config autoload
  */
-\Ilab\Util\Config::load(glob(__DIR__.'/config/*.php'));
+Config::load(glob(__DIR__ . '/config/*.php'));
 
 /**
- * Bitrix init debugbar
+ * Bitrix init Debugbar
  */
-if(\Ilab\Util\Config::get('main.bitrix'))
-	\Ilab\Facade\Debugbar::getInstance('debugbar');
+if (Config::get('main.bitrix')) {
+    Debugbar::getInstance('debugbar');
+}
