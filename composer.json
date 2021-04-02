@@ -1,45 +1,48 @@
 {
 	"name": "rivump/rivump",
-	"description": "Composer Library",
+	"description": "Composer for iLab",
 	"type": "project",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"authors": [
-			{
-					"name": "Роман",
-					"email": "rr@ilab.kz"
-			},
-			{
-					"name": "Владислав",
-					"email": "bv@ilab.kz"
-			}
+		{
+			"name": "Роман",
+			"email": "rr@ilab.kz"
+		},
+		{
+			"name": "Владислав",
+			"email": "bv@ilab.kz"
+		}
 	],
 	"require-dev": {
-			"symfony/var-dumper": "4.4",
-			"maximebf/debugbar": "^1.16"
+		"symfony/var-dumper": "4.4",
+		"maximebf/debugbar": "^1.16"
 	},
 	"autoload": {
-			"psr-4": {
-					"Ilab\\": "ilab/class/"
-			},
-			"files": [
-					"ilab/helpers.php"
-			]
+		"psr-4": {
+			"Ilab\\": "ilab/class/"
+		},
+		"files": [
+			"ilab/helpers.php"
+		]
 	},
 	"require": {
-			"php": "^7.4",
-			"guzzlehttp/guzzle": "7.0",
-			"illuminate/collections": "^8.34",
-			"league/flysystem": "^2.0",
-			"symfony/cache": "^5.2",
-			"monolog/monolog": "^2.2"
+		"php": "^7.3",
+		"ext-pdo": "*",
+		"ext-json": "*",
+		"ext-curl": "*",
+		"guzzlehttp/guzzle": "7.0",
+		"illuminate/collections": "^8.34",
+		"league/flysystem": "^2.0",
+		"symfony/cache": "^5.2",
+		"monolog/monolog": "^2.2"
 	},
 	"license": "MIT",
 	"scripts": {
 		"post-create-project-cmd": [
-				"@php -r \"unlink('.gitignore');\"",
-				"@php -r \"unlink('LICENSE');\"",
-				"@php -r \"unlink('README.md');\""
+			"@php -r \"unlink('.gitignore');\"",
+			"@php -r \"unlink('LICENSE');\"",
+			"@php -r \"unlink('README.md');\""
 		]
 	}
 }
