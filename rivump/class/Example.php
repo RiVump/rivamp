@@ -1,6 +1,6 @@
 <?php
 
-namespace Ilab;
+namespace RiVump;
 
 class Example
 {

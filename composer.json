@@ -19,10 +19,10 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ilab\\": "ilab/class/"
+			"RiVump\\": "rivump/class/"
 		},
 		"files": [
-			"ilab/helpers.php"
+			"rivump/helpers.php"
 		]
 	},
 	"require": {
@@ -44,7 +44,8 @@
 		"post-create-project-cmd": [
 			"@php -r \"unlink('.gitignore');\"",
 			"@php -r \"unlink('LICENSE');\"",
-			"@php -r \"unlink('README.md');\""
+			"@php -r \"unlink('README.md');\"",
+			"rd /s /q \"./test\""
 		]
 	}
 }
