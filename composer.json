@@ -6,12 +6,12 @@
 	"prefer-stable": true,
 	"authors": [
 		{
-			"name": "Роман",
-			"email": "rr@ilab.kz"
+			"name": "Romantsov Roman",
+			"email": "mchack4@gmail.com"
 		},
 		{
-			"name": "Владислав",
-			"email": "bv@ilab.kz"
+			"name": "Vladislav Borisenko",
+			"email": "invinciblewest@gmail.com"
 		}
 	],
 	"require-dev": {
@@ -22,7 +22,7 @@
 			"RiVump\\": "rivump/class/"
 		},
 		"files": [
-			"rivump/helpers.php"
+			"rivump/helpers/helpers.php"
 		]
 	},
 	"require": {
@@ -37,7 +37,8 @@
 		"monolog/monolog": "^2.2",
 		"rivump/rest": "^1.0",
 		"rivump/config": "^1.0",
-		"rivump/debugbar": "^1.0"
+		"rivump/debugbar": "^1.0",
+		"phpunit/phpunit": "^9.5"
 	},
 	"license": "MIT",
 	"scripts": {
