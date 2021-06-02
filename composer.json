@@ -38,7 +38,8 @@
 		"rivump/rest": "^1.0",
 		"rivump/config": "^1.0",
 		"rivump/debugbar": "^1.0",
-		"phpunit/phpunit": "^9.5"
+		"phpunit/phpunit": "^9.5",
+		"peppeocchi/php-cron-scheduler": "^4.0"
 	},
 	"license": "MIT",
 	"scripts": {
